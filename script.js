@@ -1,7 +1,7 @@
 array1d = [5, 9, 7, 2, 1, 3, 4, 8, 6];
 
 var arr2D = [];
-arr2D.push([9, 1, 3]);
+arr2D.push([1, 9, 3]);
 arr2D.push([4, 2, 6]);
 arr2D.push([7, 5, 8]);
 
@@ -365,6 +365,7 @@ function resolve_puzzle(arr, depth = 0, lastMove = '', historicalMoves = '') {
 
 
 
+
 // Résolution BFS
 
 
@@ -406,7 +407,7 @@ function resolve_BFS(arr, depth = 0) {
 
     while(true) {
         if (isCorrect(newArray)) {
-            console.log("ok");
+            document.getElementById("solutionFound").innerHTML = "<br/>Solution found with these movements : " + lastMove ;
             return true;
         }
 
@@ -424,7 +425,6 @@ function resolve_BFS(arr, depth = 0) {
 
         lastMove = queueMoves[0];
         newArray = arrayMovesInChain(arr, queueMoves[0]);
-        console.log(lastMove);
         queueMoves.shift();
     }
 }
