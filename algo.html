@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test algo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <h2> Jeu de Taquin</h2>
+            <table class="table table-bordered col-md-6" style="background-color: beige; text-align: center">
+                <tbody>
+                <tr>
+                    <th id="cell0">
+                    </th>
+                    <th id="cell1">
+                    </th>
+                    <th id="cell2">
+                    </th>
+                </tr>
+
+                <tr>
+                    <th id="cell3">
+                    </th>
+                    <th id="cell4">
+                    </th>
+                    <th id="cell5">
+                    </th>
+                </tr>
+
+                <tr>
+                    <th id="cell6">
+                    </th>
+                    <th id="cell7">
+                    </th>
+                    <th id="cell8">
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+
+            <div id="solutionFound">
+            </div>
+
+            <div id="consoleLog1">
+              </div>
+
+
+            <button type="button" class="btn btn-primary col-md-2" onclick="">Swap</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="resolve_puzzle(arr2D)">Resolve with DFS</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="resolve_BFS(arr2D)">Resolve with BFS</button>
+
+            <hr class="col-10">
+
+            <h2> Tableau 1D</h2>
+
+            <div id="tab1d">
+            </div>
+            <div id="resultTab">
+            </div>
+
+            <button type="button" class="btn btn-success col-md-2" onclick="sortArraybyInsertion()">Sort by Insertion</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="sortArraybyBubbles()">Sort by Bubbles</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="sortArraybyQuickSort()">Sort by Quick Sort</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="sortArraybyFusion()">Sort by Fusion</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="sortArraybyShell()">Sort by Shell</button>
+            <button type="button" class="btn btn-success col-md-2" onclick="sortArraybyHeap()">Sort by Heap</button>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
